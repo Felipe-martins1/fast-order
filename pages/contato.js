@@ -1,7 +1,17 @@
 import React from 'react'
+import Head from 'next/head'
 
 const Contato = () => {
-    return <h1>contato</h1>
+    return (
+        <React.Fragment>
+            <Head>
+                <title>
+                    Contato
+                </title>
+            </Head>
+            <h1>contato</h1>
+        </React.Fragment>
+    )
 }
 
 export default Contato

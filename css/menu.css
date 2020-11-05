@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+#wrapper section .pratos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+}
+
+#wrapper section{
+    margin-top: 50px;
+}
+
+.pratos .prato{
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.pratos h1{
+    font-family: 'Pacifico',cursive;
+    color: #2F323A;
+}
+
+.pratos h2{
+    font-family: 'Quicksand',sans-serif;
+    color: #F15156 ;
+}
+
+.pratos p{
+    font-family: 'Quicksand',sans-serif;
+}
+
+img{
+    border-radius: 16px;
+    height: 250px;
+    width: 250px;
+}
+
+

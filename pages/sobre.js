@@ -1,7 +1,15 @@
 import React from 'react'
+import Head from 'next/head'
 
 const Sobre = () => {
-    return <h1>Sobre</h1>
+    return (
+        <React.Fragment>
+            <Head>
+                <title>Sobre</title>
+            </Head>
+            <h1>Sobre</h1>
+        </React.Fragment>
+    )
 }
 
 export default Sobre

@@ -6,14 +6,14 @@ const Header = () => {
     return (
         <div>
             <div id='header'>
+                <Link href="/">
+                    <a>Home</a>
+                </Link>
+                <Link href="/menu">
+                    <a>Menu</a>
+                </Link>
                 <Link href="/contato">
                     <a>Contato</a>
-                </Link>
-                <Link href="/pedido">
-                    <a>Delivery</a>
-                </Link>
-                <Link href="/sobre">
-                    <a>Sobre</a>
                 </Link>
             </div>
         </div>
