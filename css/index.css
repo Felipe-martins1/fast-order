@@ -32,6 +32,16 @@
 }
 
 #main .letra-main button{
+    background: hsla(358, 85%, 63%, 1);
+
+    background: linear-gradient(270deg, hsla(358, 85%, 63%, 1) 0%, hsla(343, 100%, 66%, 1) 100%);
+    
+    background: -moz-linear-gradient(270deg, hsla(358, 85%, 63%, 1) 0%, hsla(343, 100%, 66%, 1) 100%);
+    
+    background: -webkit-linear-gradient(270deg, hsla(358, 85%, 63%, 1) 0%, hsla(343, 100%, 66%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F15156", endColorstr="#FF5282", GradientType=1 );
+
     font-family: 'Quicksand',sans-serif;
     width: 336px;
     height: 89px;
@@ -40,12 +50,13 @@
 
     border: none;
     border-radius: 16px;
-    background-color:#F15156 ;
 
     outline: none;
     cursor: pointer;
 
     margin-top: 5px;
+
+    transition: 0.4s;
 }
 
 #main .image{
@@ -55,4 +66,8 @@
 #main img{
     width: 829px;
     height: 472px;
+}
+
+#main .letra-main button:hover{
+    opacity: 85%;
 }
