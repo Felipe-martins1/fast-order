@@ -71,3 +71,34 @@
 #main .letra-main button:hover{
     opacity: 85%;
 }
+
+@media screen and (max-width: 769px){
+    #main{
+        display: flex;
+        flex-direction: column;
+        margin-left: 500px;
+    }
+    #main .letra-main {
+        margin-left: 0px;
+    }
+    #main .letra-main h1{
+        font-size: 100px;
+    }
+    #main .letra-main span{
+        font-size: 100px;
+    }
+    #main .letra-main h4{
+        font-size: 40px;
+    }
+    #main .letra-main button{
+        width: 500px;
+        height: 100px;
+        font-size: 60px;
+    }
+
+    #main img{
+        margin-left: 50px;
+        width: 829px;
+        height: 472px;
+    }
+}

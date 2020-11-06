@@ -9,6 +9,8 @@
 
 
 #header{
+    max-height: 125px;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 50px;
@@ -20,4 +22,26 @@
     text-decoration: none;
     color: #2F323A;
     font-size: 30px;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px){
+    div #header{
+        display: flex;
+        margin-left: 200px;
+    }
+    #header a{
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 769px){
+    div #header{
+        display: flex;
+        margin-left: 300px;
+        margin-top: 200px;
+    }
+    #header a{
+        font-size: 100px;
+        margin-left: 20px;
+    }
 }

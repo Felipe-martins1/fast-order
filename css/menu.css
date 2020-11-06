@@ -38,4 +38,23 @@ img{
     width: 250px;
 }
 
+@media screen and (max-width: 769px){
+    #wrapper section .pratos{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-column-gap: 60px;
+        grid-row-gap: 30px;
+        margin-left: 500px;
+    }
+    .pratos h1{
+        font-size: 50px;
+    }
+    .pratos h2{
+        font-size: 30px;
+    }
+    .pratos p{
+        font-size: 20px;
+    }
+}
+
 
