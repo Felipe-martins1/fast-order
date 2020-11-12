@@ -21,6 +21,7 @@ export default async (req, res) => {
             preco: res.Preços,
             desc: res.Descrição,
             desconto: res.Desconto,
+            precoFinal: res.PrecoFinal,
             foto: res.Foto
         }))
         res.json(pratos)

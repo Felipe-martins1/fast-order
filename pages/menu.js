@@ -16,10 +16,9 @@ const Menu = () => {
             const getItems = async () => {
                 const getUrlInsta = await data.map(async (each) => {
                     let newItem = { ...each };
-                    const imgUrl = await axios.get(each.foto + "?__a=1");
                     newItem = {
                         ...each,
-                        imgUrl: imgUrl.data.graphql.shortcode_media.display_url,
+                        imgUrl: each.Foto,
                     };
                     return newItem;
                 });
@@ -39,21 +38,21 @@ const Menu = () => {
                 <div className='pratos'>
                     {listItems.length > 0 &&
                         listItems.map((each) => (
-                            <div class='prato'>
+                            <div className='prato'>
                                 <div>
                                     <img
                                         className='image'
-                                        src={each.imgUrl}
+                                        src={each.foto}
                                         alt="blog"
                                     />
                                     <div className='details'>
-                                        <h1 class='name'>
-                                            {each.prato}
+                                        <h1 className='name'>
+                                            {each.imgUrl}
                                         </h1>
                                         <h2 className='preco'>
-                                            R$ {each.preco}
+                                            {each.precoFinal}
                                             {each.desconto.length > 0 &&
-                                                <span> (Desconto de {each.desconto}%)</span>
+                                                <span> (Desconto de {each.desconto})</span>
                                             }
                                         </h2>
                                         <p className='pratoDesc'>

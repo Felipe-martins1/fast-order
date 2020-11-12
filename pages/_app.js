@@ -4,6 +4,7 @@ import Header from '../components/header'
 import '../css/header.css'
 import '../css/index.css'
 import '../css/menu.css'
+import '../css/cadastro.css'
 
 const MyApp = ({ Component, pageProps }) => {
     return (

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+#initial-form{
+    display: flex;
+    justify-content: center;
+}
+#initial-form .login{
+    font-family: 'Quicksand',sans-serif;
+    margin-top: 30px;
+}
+
+.title{
+    text-align: center;
+    font-size: 20px;
+}
+.success {
+    border: 1px solid #F15156;
+    color: #F15156;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+.senha{
+    text-align: center;
+    margin-top: 15px;
+    color: #F15156;
+    font-size: 25px;
+}
+.senha input{
+    border-radius: 4px;
+    font-size: 20px;
+    border: 1px solid #2F323A;
+    padding: 15px;
+    outline: none;
+}
+
+#menu-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-family: 'Quicksand',sans-serif;
+}
+
+.cadastro div{
+    margin-top: 10px;
+}
+.cadastro label{
+    color: #2F323A;
+}
+.cadastro input{
+    border-radius: 4px;
+    font-size: 15px;
+    border: 1px solid #2F323A;
+    width: 400px;
+    padding: 20px;
+    outline: none;
+
+    font-family: 'Quicksand',sans-serif;
+}
+
+.cadastro textarea{
+    border-radius: 4px;
+    font-size: 15px;
+    border: 1px solid #2F323A;
+    width: 400px;
+    padding: 20px;
+    outline: none;
+
+    font-family: 'Quicksand',sans-serif;
+}
+
+.cadastro button{
+    background: hsla(358, 85%, 63%, 1);
+
+    background: linear-gradient(270deg, hsla(358, 85%, 63%, 1) 0%, hsla(343, 100%, 66%, 1) 100%);
+    
+    background: -moz-linear-gradient(270deg, hsla(358, 85%, 63%, 1) 0%, hsla(343, 100%, 66%, 1) 100%);
+    
+    background: -webkit-linear-gradient(270deg, hsla(358, 85%, 63%, 1) 0%, hsla(343, 100%, 66%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F15156", endColorstr="#FF5282", GradientType=1 );
+    font-family: 'Quicksand',sans-serif;
+    width: 316px;
+    height: 69px;
+    font-size: 28px;
+    color: #FAF9F9;
+
+    border: none;
+    border-radius: 16px;
+
+    outline: none;
+    cursor: pointer;
+
+    margin-left: 40px;
+    margin-top: 5px;
+
+    transition: 0.4s;
+}
+
+button:hover{
+    opacity: 85%;
+}
