@@ -160,9 +160,6 @@ const Carrinho = () => {
             }
 
             <div id='order-itens'>
-                {retorno === true &&
-                    <h1>Sucesso</h1>
-                }
                 <div className='voltar'>
                     <Link href='/menu'><img src='arrow.png'></img></Link>
                     <Link href='/menu'><h1>Voltar ao menu</h1></Link>
@@ -193,9 +190,14 @@ const Carrinho = () => {
 
 
                 <div className='payment'>
-                    {success && (
+                    {success === true && (
                         <div className='success'>
                             <h1>Pedido feito com sucesso!</h1>
+                        </div>
+                    )}
+                    {success === false && (
+                        <div className='success'>
+                            <h1>Insira seus dados!</h1>
                         </div>
                     )}
                     {orderItens.length > 0 &&
