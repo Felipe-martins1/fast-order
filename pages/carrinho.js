@@ -18,7 +18,7 @@ const Carrinho = () => {
         Observacao: "",
     });
 
-    //Form-------------------------------
+    //Form------------------------------
     const onChange = (e) => {
         const { name, value } = e.target;
         setForm((old) => ({
@@ -158,7 +158,6 @@ const Carrinho = () => {
             {orderItens.length == 0 &&
                 <h1 className='empty'>Seu carrinho está Vazio</h1>
             }
-
             <div id='order-itens'>
                 <div className='voltar'>
                     <Link href='/menu'><img src='arrow.png'></img></Link>
@@ -190,11 +189,11 @@ const Carrinho = () => {
 
 
                 <div className='payment'>
-                    {success === true && (
+                    {success === true &&
                         <div className='success'>
                             <h1>Pedido feito com sucesso!</h1>
                         </div>
-                    )}
+                    }
                     {orderItens.length > 0 &&
                         <React.Fragment>
                             <div className='form'>
