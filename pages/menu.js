@@ -163,11 +163,19 @@ const Menu = () => {
                             <button onClick={clearCart}>Limpar Carrinho</button>
                         </div>
                         {showCart === true &&
-                            <button className='downArrow' onClick={showCartItens}><img src='/arrow.png'></img></button>
+                            <div>
+                                <button className='downArrow' onClick={showCartItens}><img src='/arrow.png'></img></button>
+
+
+                            </div>
                         }
                         {showCart === false &&
-                            <button className='upArrow' onClick={showCartItens}><img src='/arrow.png'></img></button>
+                            <div>
+                                <button className='upArrow' onClick={showCartItens}><img src='/arrow.png'></img></button>
+                                <h4 onClick={showCartItens}>Mostrar carrinho</h4>
+                            </div>
                         }
+
                     </div>
                 }
             </section>

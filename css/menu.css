@@ -163,6 +163,10 @@
     font-size: 24px;
 }
 
+h4{
+    font-family: 'Quicksand',sans-serif;
+}
+
 
 
 
@@ -217,5 +221,6 @@
         padding: 20px;
     }
 }
+
 
 
