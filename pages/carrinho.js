@@ -195,11 +195,6 @@ const Carrinho = () => {
                             <h1>Pedido feito com sucesso!</h1>
                         </div>
                     )}
-                    {success === false && (
-                        <div className='success'>
-                            <h1>Insira seus dados!</h1>
-                        </div>
-                    )}
                     {orderItens.length > 0 &&
                         <React.Fragment>
                             <div className='form'>
