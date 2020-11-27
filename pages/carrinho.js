@@ -37,8 +37,12 @@ const Carrinho = () => {
             });
 
             const data = await response.json();
-            console.log(data)
-            setSuccess(true);
+            if (data.status === true) {
+                setSuccess(true);
+            } else {
+                setSuccess(false)
+            }
+
             setRetorno(data);
             setForm({
                 Nome: "",
