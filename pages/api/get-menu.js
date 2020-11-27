@@ -17,12 +17,13 @@ export default async (req, res) => {
 
         const rows = await sheet.getRows()
         const pratos = rows.map((res) => ({
-            prato: res.Pratos,
-            preco: res.Preços,
+            item: res.Nome,
+            preco: res.Preço,
             desc: res.Descrição,
             desconto: res.Desconto,
             precoFinal: res.PrecoFinal,
-            foto: res.Foto
+            foto: res.Foto,
+            qtd: 1
         }))
         res.json(pratos)
     } catch (err) {

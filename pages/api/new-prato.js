@@ -17,7 +17,7 @@ export default async (req, res) => {
 
     if (password == data.senha) {
         await sheet.addRow({
-            Pratos: data.Nome,
+            Nome: data.Nome,
             Preços:
                 'R$' +
                 data.Preco.toLocaleString("pt-br", {
@@ -29,12 +29,8 @@ export default async (req, res) => {
             PrecoFinal: (
                 parseFloat(data.Preco) -
                 (parseFloat(data.Preco) * data.desconto) / 100
-            ).toLocaleString("pt-br", {
-                style: "currency",
-                currency: "BRL",
-            }),
+            ),
             Foto: data.Foto,
-
         });
 
 

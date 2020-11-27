@@ -13,30 +13,160 @@
     margin-top: 50px;
 }
 
-.pratos .prato{
+
+#wrapper .pratos .prato{
     max-width: 300px;
     margin-bottom: 20px;
 }
 
-.pratos h1{
+#wrapper .pratos h1{
     font-family: 'Pacifico',cursive;
     color: #2F323A;
 }
 
-.pratos h2{
+#wrapper .pratos h2{
     font-family: 'Quicksand',sans-serif;
     color: #F15156 ;
 }
 
-.pratos p{
+#wrapper .pratos p{
     font-family: 'Quicksand',sans-serif;
 }
 
-img{
+#wrapper img{
     border-radius: 16px;
     height: 250px;
     width: 250px;
 }
+
+#wrapper .prato button{
+    background-color: #F15156;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    height: 45px;
+    width: 200px;
+    color: #FAF9F9;
+
+    border: none;
+    border-radius: 8px;
+
+    outline: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#wrapper .prato button:hover{
+    color:#2F323A;
+    opacity: 100%;
+    border: 1px solid #2F323A;
+}
+
+#wrapper section{
+    display: flex;
+    justify-content: center;
+}
+
+#wrapper #cart{
+    text-align: center;
+    margin-left: 50px;
+}
+#wrapper #cart button{
+    border: none;
+    text-align: center;
+    outline: none;
+}
+#wrapper #cart h1{
+    font-size: 25px;
+}
+#wrapper #cart img{
+    width: 50px;
+    height: 50px;
+}
+#wrapper #cart .cartNumber h1{
+    background-color: #F15156;
+    border-radius: 16px;
+}
+#wrapper .clearCart button{
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bold;
+    color: #FAF9F9;
+    background-color: #2F323A;
+    border-radius: 16px;
+    padding: 5px;
+}
+
+#wrapper #cart .cart-itens{
+    box-shadow: 0px 0px 5px 3px #B2B2B2;
+    border: 1px solid white;
+    border-radius: 16px;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#wrapper .cart-itens h1{
+    color: #F15156;
+}
+
+#wrapper #cart .item{
+    border: none;
+    border-radius: 16px;
+}
+
+#wrapper #cart .details{
+    margin-bottom: 5px;
+}
+
+#wrapper #cart .details h1 {
+    font-size: 30px;
+    color: #2F323A;
+}
+
+#wrapper #cart .details h2{
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#wrapper #cart .details span{
+    margin-left: 5px;
+    border: 1px solid #2F323A;
+    border-radius: 8px;
+}
+
+
+#wrapper .upArrow img{
+    margin-top: 5px;
+    transform: rotate(90deg);
+    transition: 0.6s;
+}
+#wrapper .upArrow img:hover{
+    transform: rotate(-90deg);
+    transition: 0.6s;
+}
+
+#wrapper .downArrow img{
+    margin-top: 5px;
+    transform: rotate(-90deg);
+    transition: 0.6s;
+}
+#wrapper .downArrow img:hover{
+    transform: rotate(90deg);
+    transition: 0.6s;
+}
+
+#wrapper .finalizar-pedido{
+    font-family: 'Quicksand',sans-serif;
+    font-weight: bold;
+    background-color: #F15156;
+    border-radius: 16px;
+    padding: 10px;
+    font-size: 24px;
+}
+
+
+
+
+
 
 @media screen and (max-width: 769px){
     #wrapper section .pratos{
@@ -44,7 +174,7 @@ img{
         grid-template-columns: auto auto;
         grid-column-gap: 60px;
         grid-row-gap: 30px;
-        margin-left: 500px;
+        margin-left: 600px;
     }
     .pratos h1{
         font-size: 50px;
@@ -54,6 +184,37 @@ img{
     }
     .pratos p{
         font-size: 20px;
+    }
+    #cart{
+        margin-left: 100px;
+    }
+    #cart .clearCart button{
+        padding: 20px;
+        font-size: 16px;
+    }
+    #cart .details h1 {
+        font-size: 40px;
+        color: #2F323A;
+    }
+    
+    #cart .details h2{
+        font-size: 40px;
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    #cart .details span{
+        font-size: 20;
+        margin-left: 5px;
+        border: 1px solid #2F323A;
+        border-radius: 8px;
+    }
+    #cart .finalizar-pedido{
+        font-family: 'Quicksand',sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        background-color: #F15156;
+        border-radius: 16px;
+        padding: 20px;
     }
 }
 

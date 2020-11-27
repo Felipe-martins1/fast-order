@@ -9,7 +9,9 @@ const Contato = () => {
                     Contato
                 </title>
             </Head>
-            <h1>contato</h1>
+            <div id='contacts'>
+                <h1>Seus contatos</h1>
+            </div>
         </React.Fragment>
     )
 }

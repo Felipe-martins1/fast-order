@@ -10,9 +10,9 @@ const Index = () => {
             </Head>
             <div className='letra-main'>
                 <h1><span>Peça</span> sua comida</h1>
-                <h1><span>Rapidamente</span></h1>
+                <h1>de forma <span>Rápida</span></h1>
                 <h4>Escolha seus produtos no nosso cardápio</h4>
-                <h4>de forma rápida e simples</h4>
+                <h4>totalmente variado!</h4>
                 <Link href='/menu'><button>Aperte aqui!</button></Link>
             </div >
             <div className='image'>

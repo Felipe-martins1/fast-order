@@ -1,0 +1,226 @@
+
+#carrinho{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+
+#carrinho .item{
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 3px solid #F15156;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+}
+
+#carrinho .voltar{
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+#carrinho .voltar img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+#carrinho .delete button{
+    width: 40px;
+    height: 40px;
+
+    margin-right: 10px;
+
+    border: 2px solid #2F323A;
+
+    border-radius: 2px;
+
+    outline: none;
+}
+
+#carrinho img{
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+#carrinho .details h1{
+    font-family: 'Pacifico',cursive;
+}
+#carrinho .details{
+    margin-left: 10px;
+    font-family: 'Quicksand',sans-serif;
+}
+
+#carrinho .qtd{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#carrinho .details button{
+    width: 30px;
+    height: 30px;
+
+    outline: none;
+
+    border: 2px solid #F15156;
+
+    border-radius: 2px;
+
+    font-size: 20px;
+}
+
+#carrinho .details .subtração{
+    margin-right: 5px;
+}
+
+#carrinho .details .adição{
+    margin-left: 5px;
+}
+
+#carrinho .empty{
+    border: 5px solid #F15156;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 200px;
+    text-align: center;
+}
+
+
+
+.payment{
+    font-family: 'Quicksand',sans-serif;
+    text-align: center;
+}
+.payment input{
+    width: 100%;
+    padding: 20px;
+    font-size: 15px;
+
+    box-shadow: 0px 0px 5px 3px #B2B2B2;
+
+    border: none;
+
+    border-radius: 5px;
+
+    margin-bottom: 10px;
+}
+
+.payment label{
+    font-size: 20px;
+}
+.radio{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+
+.radio div{
+    color: #F15156;
+    font-weight: bold;
+
+    font-size: 24px;
+}
+
+.radio input{
+    box-shadow: none;
+    width: 30px;
+}
+
+.radio input:checked{
+    box-shadow: none;
+    width: 30px;
+}
+
+.totalValue{
+    border: 4px solid #F15156;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px 3px #F15156;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.totalValue h1{
+   background-color: #F15156;
+   color: #FAF9F9;
+}
+
+.payment button{
+    background: hsla(358, 85%, 63%, 1);
+
+    background: linear-gradient(270deg, hsla(358, 85%, 63%, 1) 0%, hsla(343, 100%, 66%, 1) 100%);
+    
+    background: -moz-linear-gradient(270deg, hsla(358, 85%, 63%, 1) 0%, hsla(343, 100%, 66%, 1) 100%);
+    
+    background: -webkit-linear-gradient(270deg, hsla(358, 85%, 63%, 1) 0%, hsla(343, 100%, 66%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F15156", endColorstr="#FF5282", GradientType=1 );
+    font-family: 'Quicksand',sans-serif;
+    width: 50%;
+    height: 69px;
+    font-size: 28px;
+    color: #FAF9F9;
+
+    border: none;
+    border-radius: 16px;
+
+    outline: none;
+    cursor: pointer;
+    margin-top: 15px;
+
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 769px){
+    #carrinho{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+
+        margin-left: 220px;
+    }
+    #carrinho .item{
+        width: 150%;
+    }
+    #carrinho .item img{
+        width: 150px;
+        height: 150px;
+    }
+
+    #carrinho .details h1{
+        font-size: 50px;
+    }
+
+    #carrinho .details h2{
+        font-size: 30px;
+    }
+
+
+    .payment{
+        margin-top: 100px;
+        margin-left: 100px;
+        width: 100%;
+    }
+
+    .payment label{
+        font-size: 30px;
+    }
+
+    .payment input{
+        padding: 30px;
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .payment button{
+        width: 100%;
+    }
+}

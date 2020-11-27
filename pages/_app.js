@@ -5,6 +5,8 @@ import '../css/header.css'
 import '../css/index.css'
 import '../css/menu.css'
 import '../css/cadastro.css'
+import '../css/contato.css'
+import '../css/carrinho.css'
 
 const MyApp = ({ Component, pageProps }) => {
     return (
