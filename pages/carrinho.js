@@ -7,7 +7,7 @@ const Carrinho = () => {
     const [indexUseEffect, setIndexUseEffect] = useState()
 
     const [totalValue, setTotalValue] = useState(0)
-    const [pedidoStr, setPedidoStr] = useState([])
+    const [pedidoStr, setPedidoStr] = useState("")
 
     const [retorno, setRetorno] = useState({});
     const [success, setSuccess] = useState(false);
@@ -41,7 +41,6 @@ const Carrinho = () => {
 
     const save = async () => {
         try {
-            getFullOrder()
             form["Pedido"] = pedidoStr
             form["ValorPedido"] = totalValue
             const response = await fetch("/api/new-pedido", {
@@ -138,6 +137,9 @@ const Carrinho = () => {
     const initTotalValue = () => {
         if (totalValue === 0) {
             getTotalValue()
+        }
+        if (pedidoStr === "") {
+            getFullOrder()
         }
     }
 
