@@ -27,8 +27,21 @@ const Carrinho = () => {
         }));
     };
 
+    const getFullOrder = () => {
+        if (orderItens.length > 0) {
+            let fullStr = []
+            orderItens.map((each) => {
+                fullStr.push(each.qtd + " " + each.item + ", ")
+            })
+            const somar = (acumulado, x) => acumulado + x;
+            const total = fullStr.reduce(somar);
+            setPedidoStr(total)
+        }
+    }
+
     const save = async () => {
         try {
+            getFullOrder()
             form["Pedido"] = pedidoStr
             form["ValorPedido"] = totalValue
             const response = await fetch("/api/new-pedido", {
@@ -52,18 +65,7 @@ const Carrinho = () => {
     //--------------------------------------------------------------
 
 
-    //getFullOrder 
-    const getFullOrder = () => {
-        if (orderItens.length > 0) {
-            let fullStr = []
-            orderItens.map((each) => {
-                fullStr.push(each.qtd + " " + each.item + ", ")
-            })
-            const somar = (acumulado, x) => acumulado + x;
-            const total = fullStr.reduce(somar);
-            setPedidoStr(total)
-        }
-    }
+
     //Pegar o pedido
     const getOrder = () => {
         if (localStorage.getItem('products') === null) {
