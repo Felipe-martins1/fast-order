@@ -71,7 +71,6 @@ const Carrinho = () => {
         } else {
             let cart = JSON.parse(localStorage.getItem('products'))
             setOrderItens(cart)
-            getFullOrder()
         }
     }
 
@@ -144,6 +143,7 @@ const Carrinho = () => {
 
     useEffect(() => {
         getOrder()
+        getFullOrder()
         getTotalValue()
         setIndexUseEffect()
     }, [indexUseEffect])
