@@ -11,14 +11,17 @@ export default async (req, res) => {
     await doc.loadInfo();
     const sheet = doc.sheetsByIndex[3];
     const data = JSON.parse(req.body);
-
-    await sheet.addRow({
-        Nome: data.Nome,
-        Pedido: data.Pedido,
-        Valor: "R$" + data.ValorPedido,
-        Endereco: data.Endereco,
-        FormaPagamento: data.FormaPagamento,
-        Observacoes: data.Observacao
-    });
-    res.json({ status: true })
+    if (data.Nome !== "" && data.Endereco !== "") {
+        await sheet.addRow({
+            Nome: data.Nome,
+            Pedido: data.Pedido,
+            Valor: "R$" + data.ValorPedido,
+            Endereco: data.Endereco,
+            FormaPagamento: data.FormaPagamento,
+            Observacoes: data.Observacao
+        });
+        res.json({ status: true })
+    } else {
+        res.json({ status: false })
+    }
 }

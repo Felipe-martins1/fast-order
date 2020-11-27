@@ -40,14 +40,12 @@ const Carrinho = () => {
             console.log(data)
             setSuccess(true);
             setRetorno(data);
-            if (success === true) {
-                setForm({
-                    Nome: "",
-                    Endereco: "",
-                    FormaPagamento: "",
-                    Observacao: "",
-                })
-            }
+            setForm({
+                Nome: "",
+                Endereco: "",
+                FormaPagamento: "",
+                Observacao: "",
+            })
         } catch (err) {
             console.log(err)
         }
@@ -201,6 +199,7 @@ const Carrinho = () => {
                                     name="Nome"
                                     onChange={onChange}
                                     value={form.Nome}
+                                    required
                                 />
 
                                 <h4><label for='Endereco'>Seu endereço: Ex: Bairro/Rua/Número</label></h4>
@@ -210,6 +209,7 @@ const Carrinho = () => {
                                     name="Endereco"
                                     onChange={onChange}
                                     value={form.Endereco}
+                                    required
                                 />
 
                                 <h4><label for='FormaPagamento'>Selecione uma Forma de pagamento</label></h4>
