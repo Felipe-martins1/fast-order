@@ -191,7 +191,7 @@ const Carrinho = () => {
                 <div className='payment'>
                     {success && (
                         <div className='success'>
-                            <h1>Prato adicionado com sucesso!</h1>
+                            <h1>Pedido feito com sucesso!</h1>
                         </div>
                     )}
                     {orderItens.length > 0 &&
