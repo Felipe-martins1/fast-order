@@ -37,12 +37,7 @@ const Carrinho = () => {
             });
 
             const data = await response.json();
-            if (data.status === true) {
-                setSuccess(true);
-            } else {
-                setSuccess(false)
-            }
-
+            setSuccess(true)
             setRetorno(data);
             setForm({
                 Nome: "",
@@ -191,7 +186,7 @@ const Carrinho = () => {
                 <div className='payment'>
                     {success === true &&
                         <div className='success'>
-                            <h1>Pedido feito com sucesso!</h1>
+                            <h1>Pedido realizado com sucesso!</h1>
                         </div>
                     }
                     {orderItens.length > 0 &&
