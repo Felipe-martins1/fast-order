@@ -19,7 +19,7 @@ export default async (req, res) => {
             Endereco: data.Endereco,
             FormaPagamento: data.FormaPagamento,
             Observacoes: data.Observacao,
-            Troco: data.Troco
+            Troco: (parseFloat(data.Troco) - parseFloat(data.ValorPedido))
         });
         res.json({ status: true })
     } else {
