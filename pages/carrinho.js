@@ -8,6 +8,7 @@ const Carrinho = () => {
 
     const [totalValue, setTotalValue] = useState(0)
     const [pedidoStr, setPedidoStr] = useState("")
+    const [troco, setTroco] = useState(false)
 
     const [retorno, setRetorno] = useState({});
     const [success, setSuccess] = useState(false);
@@ -16,11 +17,16 @@ const Carrinho = () => {
         Endereco: "",
         FormaPagamento: "",
         Observacao: "",
+        Troco: null
     });
+
 
     //Form------------------------------
     const onChange = (e) => {
         const { name, value } = e.target;
+        if (value === "Dinheiro") {
+            setTroco(true)
+        }
         setForm((old) => ({
             ...old,
             [name]: value,
@@ -61,6 +67,7 @@ const Carrinho = () => {
                 Endereco: "",
                 FormaPagamento: "",
                 Observacao: "",
+                Troco: null
             })
         } catch (err) {
             console.log(err)
@@ -242,7 +249,17 @@ const Carrinho = () => {
                                             value="Cartão de crédito"
                                         />
                                     </div>
+
                                 </div>
+                                {troco === true &&
+                                    <input
+                                        placeholder="Você precisa de troco para quanto?"
+                                        type="number"
+                                        name="Troco"
+                                        onChange={onChange}
+                                        value={form.Troco}
+                                    />
+                                }
 
                                 <h4><label for='Observacao'>Observações</label></h4>
                                 <input

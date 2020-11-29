@@ -18,7 +18,8 @@ export default async (req, res) => {
             Valor: "R$" + data.ValorPedido,
             Endereco: data.Endereco,
             FormaPagamento: data.FormaPagamento,
-            Observacoes: data.Observacao
+            Observacoes: data.Observacao,
+            Troco: data.Troco
         });
         res.json({ status: true })
     } else {
