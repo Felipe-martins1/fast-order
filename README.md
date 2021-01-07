@@ -1,4 +1,4 @@
-# FelipeMartins.dev(Resume)
+# Fast Order
 
 This project was done with the goal of learning more about React, LocalStorage, CSS and Javascript
 
